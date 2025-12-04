@@ -1,0 +1,27 @@
+body {
+  background-color: lightblue;
+}
+
+#contenedor p {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-family: Arial;
+}
+
+.variable {
+  color: rgb(8, 0, 255);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#respuestaCorrecta p {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-family: Arial;
+}
+
+#respuestaCorrecta p {
+  width: 800px;
+  height: 40px;
+  background-color: #1aff00;
+}
