@@ -1,9 +1,8 @@
 // En este programa voy a crear un juego para practicar sinonimia y antonimia para el examen de PAU
-const sinonimos = ['artículo','valia', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad'] // No pilla las tildes, eso es un problema
+const sinonimos = ['artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad'] // No pilla las tildes, eso es un problema
 const sinonimo = sinonimos[Math.floor(Math.random() * sinonimos.length)]
 
 const title = 'SINONIMOS'
-const aclaración = ' (si sale valia es valía)'
 const respuestaCorrecta = 'Respuesta correcta, presiona f5 para que genere otra palabra, si sale la misma dele al f5 otra vez'
 const respuestaIncorrecta = 'Respuesta incorrecta, presiona f5 para que genere otra palabra, si sale la misma dele al f5 otra vez. Si crees que la respuesta que has escrito es válida puede que se deba a que he escrito solamente los sinonimos que salen en la RAE.'
 const teclaEnter = '"ENTER"'
@@ -11,10 +10,10 @@ const teclaEnter = '"ENTER"'
 const cont1 = document.getElementById("contenedor")
 
 cont1.innerHTML += `<p class="frase"><span class="title">${title}</span></p>`
-cont1.innerHTML += `<p class="frase">Dime el sinónimo de <span class="variable1">${sinonimo}</span><span class="variable2">${aclaración}</span></p>`
+cont1.innerHTML += `<p class="frase">Dime el sinónimo de <span class="variable1">${sinonimo}</span></p>`
 cont1.innerHTML += `<p class="frase">Presiona la tecla <span class="teclaEnter">${teclaEnter}</span> para ingresar tu respuesta<span class="fotoEnter"></span></p>`
 
-if(sinonimo === 'valia'){
+if(sinonimo === 'valía'){
 document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     const solucionS = prompt ('Ingresa tu respuesta: ')
