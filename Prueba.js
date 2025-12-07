@@ -6,13 +6,15 @@ const title = 'SINONIMOS'
 const respuestaCorrecta = 'Respuesta correcta, presiona f5 para que genere otra palabra, si sale la misma dele al f5 otra vez'
 const respuestaIncorrecta = 'Respuesta incorrecta, presiona f5 para que genere otra palabra, si sale la misma dele al f5 otra vez. Si crees que la respuesta que has escrito es válida puede que se deba a que he escrito solamente los sinonimos que salen en la RAE.'
 const teclaEnter = '"ENTER"'
+const aclaración = '(hay que escribir la respuesta en minúsculas)'
 
 const cont1 = document.getElementById("contenedor")
 
 cont1.innerHTML += `<p class="frase"><span class="title">${title}</span></p>`
 cont1.innerHTML += `<p class="frase">Dime el sinónimo de <span class="variable1">${sinonimo}</span></p>`
-cont1.innerHTML += `<p class="frase">Presiona la tecla <span class="teclaEnter">${teclaEnter}</span> para ingresar tu respuesta<span class="fotoEnter"></span></p>`
+cont1.innerHTML += `<p class="frase">Presiona la tecla <span class="teclaEnter">${teclaEnter}</span> para ingresar tu respuesta<span class="fotoEnter"></span><span class="aclaración">${aclaración}</span></p>`
 
+// Cada condicional sirve para darle los valores de los sinonimos que sirven para cada palabra
 if(sinonimo === 'valía'){
 document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
