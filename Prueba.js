@@ -1,5 +1,5 @@
 // En este programa voy a crear un juego para practicar sinonimia y antonimia para el examen de PAU
-const sinonimos = ['valia', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez'] // No pilla las tildes, eso es un problema
+const sinonimos = ['artículo','valia', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad'] // No pilla las tildes, eso es un problema
 const sinonimo = sinonimos[Math.floor(Math.random() * sinonimos.length)]
 
 const title = 'SINONIMOS'
@@ -109,6 +109,36 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     const solucionS = prompt ('Ingresa tu respuesta: ')
     const solucionesS = ['aversión', 'animadversión', 'tirria', 'antipatía', 'ojeriza', 'manía', 'animosidad', 'odio', 'rabia', 'enemistad', 'rencor']
+    if(solucionesS.includes(solucionS)){
+         cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+      }
+     else {
+         cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+      }
+  }
+})
+}
+
+if(sinonimo === 'soledad'){
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    const solucionS = prompt ('Ingresa tu respuesta: ')
+    const solucionesS = ['aislamiento', 'retiro', 'abandono', 'incomunicación', 'separación', 'desamparo', 'encierro', 'clausura', 'destierro', 'melancolía', 'tristeza', 'nostalgia', 'añoranza', 'melarchía', 'soleá']
+    if(solucionesS.includes(solucionS)){
+         cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+      }
+     else {
+         cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+      }
+  }
+})
+}
+
+if(sinonimo === 'artículo'){
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    const solucionS = prompt ('Ingresa tu respuesta: ')
+    const solucionesS = ['entrada', 'noticia', 'editorial', 'crónica', 'suelto', 'gacetilla', 'apartado', 'comentario', 'reseña', 'producto', 'género', 'mercancía', 'efecto']
     if(solucionesS.includes(solucionS)){
          cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
       }
