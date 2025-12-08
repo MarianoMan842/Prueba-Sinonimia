@@ -2,6 +2,14 @@ body {
   background-color: rgb(173, 173, 173);
 }
 
+.menu{
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: "Times New Roman", Times, serif
+}
+
 .title{
   color: rgb(0, 0, 0);
   display: flex;
