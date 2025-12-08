@@ -1,12 +1,12 @@
 // En este programa voy a crear un juego para practicar sinonimia y antonimia para el examen de PAU
 const aclaración = '(hay que escribir la respuesta en minúsculas y con las tildes correspondientes)'
 const teclaEnter = '"ENTER"'
-const respuestaCorrecta = 'Respuesta correcta, presiona f5 para que genere otra palabra, si sale la misma dele al f5 otra vez'
-const respuestaIncorrecta = 'Respuesta incorrecta, presiona f5 para que genere otra palabra, si sale la misma dele al f5 otra vez. Si crees que la respuesta que has escrito es válida puede que se deba a que he escrito solamente los sinonimos que salen en la RAE.'
+const respuestaCorrecta = 'Respuesta correcta, presione "S" o "A" para que genere otra palabra, si sale la misma dele a la "S" o a la "A" otra vez'
+const respuestaIncorrecta = 'Respuesta incorrecta, presione "S" o "A" para que genere otra palabra, si sale la misma dele a la "S" o a la "A" otra vez. Si cree que la respuesta que ha escrito es válida puede que se deba a que he escrito solamente los sinonimos que salen en la RAE.'
 
 const cont1 = document.getElementById("contenedor")
 
-const menu = 'Pulsa "S" para practicar SINÓNIMOS o "A" para practicar ANTÓNIMOS'
+const menu = 'Pulse "S" para practicar SINÓNIMOS o "A" para practicar ANTÓNIMOS'
 cont1.innerHTML += `<p class="frase"><span class="menu">${menu}</span></p>`
 
 document.addEventListener("keydown", (event) => {
