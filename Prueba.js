@@ -52,7 +52,7 @@ document.addEventListener("keydown", (event) => {
       document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
-          const soluciones = ['excelencia', 'bondad', 'eminencia', 'excelsitud', '77 97 114 161 97']
+          const soluciones = ['excelencia', 'bondad', 'eminencia', 'excelsitud']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
           }
@@ -641,4 +641,5 @@ document.addEventListener("keydown", (event) => {
 
     teclaUsada = true
   }
+
 })
