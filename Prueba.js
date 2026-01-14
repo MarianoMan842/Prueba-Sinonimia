@@ -1,4 +1,4 @@
-// The code is in spanish because I wanted the game to be one way to learn synonyms and antonyms in spanish to practice to PAU in Spain. The public to this game are students that the next year are going to enter to the university there in Spain, so if they want to read the code I thought it would be easier if is in sapanish and to me to program itt.
+// The code is in spanish because I wanted the game to be one way to learn synonyms and antonyms in spanish to practice to PAU in Spain. The game is oriented to students that the next year are going to enter to the university there in Spain, so if they want to read the code I thought it would be easier if it is in spanish and also easier to me to program it.
 
 // En este programa voy a crear un juego para practicar sinonimia y antonimia para el examen de PAU
 const aclaración = '(hay que escribir la respuesta en minúsculas y con las tildes correspondientes)'
@@ -38,6 +38,21 @@ document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
           const soluciones = ['valer', 'valor', 'mérito', 'precio', 'estimabilidad', 'preciosidad']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+        }
+      })
+    }
+
+    if(sinonimo === 'meiga'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['bruja', 'hechicera']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
           }
@@ -641,5 +656,4 @@ document.addEventListener("keydown", (event) => {
 
     teclaUsada = true
   }
-
 })
