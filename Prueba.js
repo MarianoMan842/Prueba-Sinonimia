@@ -21,7 +21,7 @@ document.addEventListener("keydown", (event) => {
       return
     }
 
-    const sinonimos = ['perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
+    const sinonimos = ['meiga', 'perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
     const sinonimo = sinonimos[Math.floor(Math.random() * sinonimos.length)]
     console.log(sinonimos.length)
 
