@@ -1,7 +1,7 @@
 // The code is in spanish because I wanted the game to be one way to learn synonyms and antonyms in spanish to practice to PAU in Spain. The game is oriented to students that the next year are going to enter to the university there in Spain, so if they want to read the code I thought it would be easier if it is in spanish and also easier to me to program it.
 
 // En este programa voy a crear un juego para practicar sinonimia y antonimia para el examen de PAU
-const aclaración = '(hay que escribir la respuesta en minúsculas y con las tildes correspondientes)'
+const aclaración = '(SOLO FUNCIONA EN UN ORDENADOR. Hay que escribir la respuesta en minúsculas y con las tildes correspondientes)'
 const teclaEnter = '"ENTER"'
 const respuestaCorrecta = 'Respuesta correcta, presione f5 para que genere otra palabra, si sale la misma dele al f5 otra vez'
 const respuestaIncorrecta = 'Respuesta incorrecta, presione f5 para que genere otra palabra, si sale la misma dele al f5 otra vez. Si cree que la respuesta que ha escrito es válida puede que se deba a que he escrito solamente los sinonimos que salen en la RAE.'
@@ -21,7 +21,7 @@ document.addEventListener("keydown", (event) => {
       return
     }
 
-    const sinonimos = ['lívido','sordidez','aviar','tarambana','huraño','egresar','meiga', 'perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
+    const sinonimos = ['hito','vaina','entelequia','lívido','sordidez','aviar','tarambana','huraño','egresar','meiga', 'perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
     const sinonimo = sinonimos[Math.floor(Math.random() * sinonimos.length)]
     console.log(sinonimos.length)
 
@@ -39,6 +39,51 @@ document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
           const soluciones = ['valer', 'valor', 'mérito', 'precio', 'estimabilidad', 'preciosidad']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+        }
+      })
+    }
+
+    if(sinonimo === 'hito'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['señal', 'mojón', 'piedra', 'poste', 'guardacantón', 'indicación', 'objetivo', 'centro', 'blanco', 'diana', 'jalón', 'hecho', 'baliza', 'cipo', 'encrucijada', 'indicador', 'linde', 'acontecimiento', 'efeméride', 'caliche', 'objetivo']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+        }
+      })
+    }
+
+    if(sinonimo === 'vaina'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['funda', 'forro', 'envoltura', 'estuche', 'guarda', 'cáscara', 'chaucha', 'irresponsable', 'informal', 'malqueda']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+        }
+      })
+    }
+
+    if(sinonimo === 'entelequia'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['ficción', 'ilusión', 'fantasía', 'quimera', 'irrealidad', 'invención', 'mentira', 'engaño', 'patraña']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
           }
@@ -506,7 +551,7 @@ document.addEventListener("keydown", (event) => {
       return
     }
 
-    const antonimos = ['hosco','díscolo','azar','sinónimo','complejo', 'mandar', 'silencio', 'universal', 'orden', 'aceleración', 'fortuna', 'actual', 'superficial', 'cuerdo', 'consuelo', 'intencionado', 'grosero', 'enardecidos', 'salubres']
+    const antonimos = ['bárbaro','perpetuo','hosco','díscolo','azar','sinónimo','complejo', 'mandar', 'silencio', 'universal', 'orden', 'aceleración', 'fortuna', 'actual', 'superficial', 'cuerdo', 'consuelo', 'intencionado', 'grosero', 'enardecidos', 'salubres']
     const antonimo = antonimos[Math.floor(Math.random() * antonimos.length)]
     console.log(antonimos.length)
     const title = 'ANTÓNIMOS'
@@ -522,6 +567,36 @@ document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
           const soluciones = ['profundo', 'hondo', 'interior', 'trascendental', 'fundamental']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+        }
+      })
+    }
+
+    if(antonimo === 'bárbaro'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['bondadoso', 'prudente', 'sensato', 'juicioso', 'educado', 'refinado', 'formal', 'insignificante']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+        }
+      })
+    }
+
+    if(antonimo === 'perpetuo'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['pasajero', 'efimero', 'transitorio', 'perecedero', 'endeble', 'finito']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
           }
