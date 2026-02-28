@@ -45,7 +45,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -65,7 +65,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -85,7 +85,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -105,7 +105,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -125,7 +125,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -145,7 +145,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -165,7 +165,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -185,7 +185,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -205,7 +205,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -225,7 +225,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -245,7 +245,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -265,7 +265,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -285,7 +285,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -305,7 +305,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -325,7 +325,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -345,7 +345,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -365,7 +365,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -384,7 +384,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -404,7 +404,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -424,7 +424,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -444,7 +444,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -464,7 +464,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -484,7 +484,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -504,7 +504,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -524,7 +524,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -544,7 +544,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -564,7 +564,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -584,7 +584,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -604,7 +604,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -624,7 +624,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -644,7 +644,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -665,7 +665,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -685,7 +685,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -705,7 +705,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -725,7 +725,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -745,7 +745,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -765,7 +765,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -785,7 +785,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -805,7 +805,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -825,7 +825,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -845,7 +845,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -865,7 +865,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -903,7 +903,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -923,7 +923,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -943,7 +943,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -963,7 +963,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -983,7 +983,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1003,7 +1003,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1023,7 +1023,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1043,7 +1043,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1063,7 +1063,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1083,7 +1083,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1103,7 +1103,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1123,7 +1123,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1143,7 +1143,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1164,7 +1164,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1185,7 +1185,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1205,7 +1205,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1225,7 +1225,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1245,7 +1245,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1265,7 +1265,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1285,7 +1285,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1305,7 +1305,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
@@ -1325,7 +1325,7 @@ document.addEventListener("keydown", (event) => {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
          document.addEventListener("keydown", (event) => {
-            if(event.key === "1"){
+            if(event.key === "1" || event.key === 'NumPad1'){
               cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
             }
           })
