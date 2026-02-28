@@ -3,15 +3,15 @@
 // En este programa voy a crear un juego para practicar sinonimia y antonimia para el examen de PAU
 const aclaración = '(SOLO FUNCIONA EN UN ORDENADOR. Hay que escribir la respuesta en minúsculas y con las tildes correspondientes)'
 const teclaEnter = '"ENTER"'
-const respuestaCorrecta = 'Respuesta correcta, presione f5 para que genere otra palabra, si sale la misma dele al f5 otra vez'
-const respuestaIncorrecta = 'Respuesta incorrecta, presione f5 para que genere otra palabra, si sale la misma dele al f5 otra vez. Si cree que la respuesta que ha escrito es válida puede que se deba a que he escrito solamente los sinonimos que salen en la RAE.'
+const respuestaCorrecta = 'Respuesta correcta, presione f5 para que genere otra palabra, si sale la misma dele al f5 otra vez. Puede ver el resto de soluciones si le da a la tecla "1".'
+const respuestaIncorrecta = 'Respuesta incorrecta, dele al "enter" otra vez si quiere intentarlo de nuevo o presione f5 para que genere otra palabra, si sale la misma dele al f5 otra vez. Si cree que la respuesta que ha escrito es válida puede que se deba a que he escrito solamente los sinonimos que salen en la RAE, puede ver las soluciones si le da a la tecla "1".'
 
 const cont1 = document.getElementById("contenedor")
 
 const menu = 'Pulse "S" para practicar SINÓNIMOS o "A" para practicar ANTÓNIMOS'
+// Cada vez que he querido añadir un tecto y modificarlo me ha tocado hacerlo así porque no he encontrado otra forma
 cont1.innerHTML += `<p class="frase"><span class="menu">${menu}</span></p>`
-const aclaración1 = '(solo hay que darle una vez, si le da 2 no funciona y le tiene que dar al f5)'
-cont1.innerHTML += `<p class="frase"><span class="aclaración1">${aclaración1}</span></p>`
+cont1.innerHTML += `<p class="frase"><span class="aclaración">${aclaración}</span></p>`
 
 let teclaUsada = false
 document.addEventListener("keydown", (event) => {
@@ -21,16 +21,15 @@ document.addEventListener("keydown", (event) => {
       return
     }
 
-    const sinonimos = ['hito','vaina','entelequia','lívido','sordidez','aviar','tarambana','huraño','egresar','meiga', 'perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
+    const sinonimos = ['estremecer','ascetismo','aversión','enaltecer','hito','vaina','entelequia','lívido','sordidez','aviar','tarambana','huraño','egresar','meiga', 'perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
     const sinonimo = sinonimos[Math.floor(Math.random() * sinonimos.length)]
     console.log(sinonimos.length)
 
     const title = 'SINÓNIMOS'
 
-    // Cada vez que he querido añadir un tecto y modificarlo me ha tocado hacerlo así porque no he encontrado otra forma
     cont1.innerHTML += `<p class="frase"><span class="title">${title}</span></p>`
     cont1.innerHTML += `<p class="frase">Dime el sinónimo de <span class="sinonimo">${sinonimo}</span></p>`
-    cont1.innerHTML += `<p class="frase">Presiona la tecla <span class="teclaEnter">${teclaEnter}</span> para ingresar tu respuesta<span class="fotoEnter"></span><span class="aclaración">${aclaración}</span></p>`
+    cont1.innerHTML += `<p class="frase">Presiona la tecla <span class="teclaEnter">${teclaEnter}</span> para ingresar tu respuesta<span class="fotoEnter"></span></p>`
 
     // Cada condicional sirve para darle los valores de los sinonimos que sirven para cada palabra
     // La estructura de los condicionales es la misma, lo único que cambia son las palabras
@@ -45,6 +44,91 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'estremecer'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['sobresaltar', 'sobrecoger', 'sacudir', 'alterar', 'conmover', 'asustar', 'alarmar', 'aterrar', 'espantar', 'horrorizar', 'vibrar', 'temblar', 'tiritar', 'achucharse']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'ascetismo'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['ascética', 'misticismo', 'austeridad', 'sobriedad', 'moderación', 'parquedad', 'frugalidad', 'templanza', 'virtud']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'aversión'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['rechazo', 'repugnancia', 'antipatía', 'aborrecimiento', 'repulsión', 'odio', 'inquina', 'tirria', 'miedo', 'temor']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'enaltecer'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['alabar', 'elogiar', 'ensalzar', 'engrandecer', 'encarecer', 'aplaudir', 'celebrar', 'encomiar', 'exaltar', 'ponderar', 'loar', 'honrar', 'enorgullecer']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -60,6 +144,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -75,6 +164,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -90,6 +184,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -105,6 +204,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -120,6 +224,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -135,6 +244,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -150,6 +264,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -165,6 +284,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -179,6 +303,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -194,6 +323,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -209,6 +343,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -224,6 +363,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -239,6 +383,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -254,6 +403,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -269,6 +423,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -284,6 +443,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -299,6 +463,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -314,6 +483,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -329,6 +503,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -344,6 +523,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -359,6 +543,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -374,6 +563,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -390,6 +584,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -405,6 +604,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -420,6 +624,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }  
@@ -435,6 +644,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }    
@@ -450,6 +664,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -465,6 +684,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -480,6 +704,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }  
@@ -495,6 +724,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -510,6 +744,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -525,6 +764,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -540,6 +784,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }  
@@ -551,7 +800,7 @@ document.addEventListener("keydown", (event) => {
       return
     }
 
-    const antonimos = ['bárbaro','perpetuo','hosco','díscolo','azar','sinónimo','complejo', 'mandar', 'silencio', 'universal', 'orden', 'aceleración', 'fortuna', 'actual', 'superficial', 'cuerdo', 'consuelo', 'intencionado', 'grosero', 'enardecidos', 'salubres']
+    const antonimos = ['rollizo','bárbaro','perpetuo','hosco','díscolo','azar','sinónimo','complejo', 'mandar', 'silencio', 'universal', 'orden', 'aceleración', 'fortuna', 'actual', 'superficial', 'cuerdo', 'consuelo', 'intencionado', 'grosero', 'enardecidos', 'salubres']
     const antonimo = antonimos[Math.floor(Math.random() * antonimos.length)]
     console.log(antonimos.length)
     const title = 'ANTÓNIMOS'
@@ -573,6 +822,31 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(antonimo === 'rollizo'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['flaco', 'delgado', 'enjunto']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="respuestaCorrecta">${respuestaCorrecta}</span><span class="fotoTick"></span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -588,6 +862,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -603,6 +882,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -618,6 +902,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -633,6 +922,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -648,6 +942,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -663,6 +962,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -678,6 +982,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -693,6 +1002,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -708,6 +1022,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -723,6 +1042,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -738,6 +1062,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -754,6 +1083,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -770,6 +1104,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -785,6 +1124,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }  
@@ -800,6 +1144,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }    
@@ -815,6 +1164,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -830,6 +1184,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -845,6 +1204,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }  
@@ -860,6 +1224,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
@@ -875,6 +1244,11 @@ document.addEventListener("keydown", (event) => {
           else {
             cont1.innerHTML += `<p class="frase"><span class="respuestaIncorrecta">${respuestaIncorrecta}</span><span class="fotoX"></span></p>`
           }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1"){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
         }
       })
     }
