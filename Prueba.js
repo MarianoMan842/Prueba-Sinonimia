@@ -21,7 +21,7 @@ document.addEventListener("keydown", (event) => {
       return
     }
 
-    const sinonimos = ['patíbulo','sadismo','cerro','gazmoño','caníval','cebar','búho','clamoroso','menester','ipso facto','ruborizarse','soslayo','escudriñar','mascullar','ominoso','acial', 'tinaja','gleba','tupido','mamarracho','añurgarse','atusar','hucha','tamborilear','rótulo','estremecer','ascetismo','aversión','enaltecer','hito','vaina','entelequia','lívido','sordidez','aviar','tarambana','huraño','egresar','meiga', 'perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
+    const sinonimos = ['esbozar','éxito','sibilino','alborada','ribera','alcabala','quiste','alcázar','belfo','ademán','liza','colegir','patíbulo','sadismo','cerro','gazmoño','caníval','cebar','búho','clamoroso','menester','ipso facto','ruborizarse','soslayo','escudriñar','mascullar','ominoso','acial', 'tinaja','gleba','tupido','mamarracho','añurgarse','atusar','hucha','tamborilear','rótulo','estremecer','ascetismo','aversión','enaltecer','hito','vaina','entelequia','lívido','sordidez','aviar','tarambana','huraño','egresar','meiga', 'perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
     const sinonimo = sinonimos[Math.floor(Math.random() * sinonimos.length)]
     console.log(sinonimos.length)
 
@@ -38,6 +38,246 @@ document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
           const soluciones = ['valer', 'valor', 'mérito', 'precio', 'estimabilidad', 'preciosidad']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'esbozar'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['bosquejar', 'abocetar', 'diseñar', 'trazar', 'apuntar', 'perfilar', 'plantear', 'proponer', 'insinuar', 'sugerir']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+    
+    if(sinonimo === 'éxito'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['triunfo', 'victoria', 'consecución', 'fortuna', 'fama', 'gloria', 'celebridad', 'renombre', 'notoriedad']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }    
+
+    if(sinonimo === 'sibilino'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['profético', 'adivinatorio', 'misterioso', 'oscuro', 'enigmático', 'ambiguo', 'críptica', 'confuso']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'alborada'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['amanecer', 'alba', 'amanecida', 'alboreo', 'aurora', 'albada', 'albazo']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'ribera'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['orilla', 'borde', 'margen', 'playa', 'costa', 'litoral', 'riba', 'ribero']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'alcabala'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['gabela', 'tributo', 'impuesto']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'quiste'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['zurrón', 'tumor', 'lobanillo', 'lupia']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'alcázar'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['fortaleza', 'fortificación', 'castillo', 'fuerte', 'fortín', 'ciudadela', 'alcazaba', 'castro', 'plaza']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'belfo'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['befo', 'bezudo', 'hocicudo', 'morrudo', 'estimabilidad', 'preciosidad']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'ademán'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['gesto', 'actitud', 'modales', 'maneras', 'formas', 'modos']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'liza'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['mújol', 'múgil', 'albur', 'breca', 'cabezudo', 'capitón', 'dardo', 'lisa', 'mueble', 'mugle', 'mule', 'campo', 'plaza', 'palenque', 'palestra', 'arena', 'estadio', 'ruedo', 'lid', 'combate', 'pelea', 'competición']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'colegir'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['juntar', 'confluir', 'entroncar', 'inferir', 'deducir', 'conjeturar', 'presumir', 'suponer', 'concluir', 'seguirse', 'desprenderse']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
           }
@@ -1301,7 +1541,7 @@ document.addEventListener("keydown", (event) => {
       return
     }
 
-    const antonimos = ['diligente','férreo','radical','condescendiente','umbral','comenzar','rollizo','bárbaro','perpetuo','hosco','díscolo','azar','sinónimo','complejo', 'mandar', 'silencio', 'universal', 'orden', 'aceleración', 'fortuna', 'actual', 'superficial', 'cuerdo', 'consuelo', 'intencionado', 'grosero', 'enardecidos', 'salubres']
+    const antonimos = ['banal','lacio','mórbido','halagüeño','fidedigno','boato','diligente','férreo','radical','condescendiente','umbral','comenzar','rollizo','bárbaro','perpetuo','hosco','díscolo','azar','sinónimo','complejo', 'mandar', 'silencio', 'universal', 'orden', 'aceleración', 'fortuna', 'actual', 'superficial', 'cuerdo', 'consuelo', 'intencionado', 'grosero', 'enardecidos', 'salubres']
     const antonimo = antonimos[Math.floor(Math.random() * antonimos.length)]
     console.log(antonimos.length)
     const title = 'ANTÓNIMOS'
@@ -1317,6 +1557,127 @@ document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
           const soluciones = ['profundo', 'hondo', 'interior', 'trascendental', 'fundamental']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(antonimo === 'banal'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['profundo', 'sustancial']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(antonimo === 'lacio'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['lozano', 'rizado', 'ondulado']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(antonimo === 'mórbido'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['sano', 'saludable', 'beneficioso', 'inocuo', 'duro', 'áspero']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(antonimo === 'halagüeño'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['ofensivo', 'desalentador', 'desfavorable']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(antonimo === 'fidedigno'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['dudoso', 'falso']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+
+    if(antonimo === 'boato'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['austeridad', 'sobriedad', 'sencillez']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
           }
