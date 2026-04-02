@@ -21,7 +21,7 @@ document.addEventListener("keydown", (event) => {
       return
     }
 
-    const sinonimos = ['desdoblada','contumacia','zurcir','esbozar','éxito','sibilino','alborada','ribera','alcabala','quiste','alcázar','belfo','ademán','liza','colegir','patíbulo','sadismo','cerro','gazmoño','caníval','cebar','búho','clamoroso','menester','ipso facto','ruborizarse','soslayo','escudriñar','mascullar','ominoso','acial', 'tinaja','gleba','tupido','mamarracho','añurgarse','atusar','hucha','tamborilear','rótulo','estremecer','ascetismo','aversión','enaltecer','hito','vaina','entelequia','lívido','sordidez','aviar','tarambana','huraño','egresar','meiga', 'perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
+    const sinonimos = ['octavilla','gulusmear','desdoblada','contumacia','zurcir','esbozar','éxito','sibilino','alborada','ribera','alcabala','quiste','alcázar','belfo','ademán','liza','colegir','patíbulo','sadismo','cerro','gazmoño','caníval','cebar','búho','clamoroso','menester','ipso facto','ruborizarse','soslayo','escudriñar','mascullar','ominoso','acial', 'tinaja','gleba','tupido','mamarracho','añurgarse','atusar','hucha','tamborilear','rótulo','estremecer','ascetismo','aversión','enaltecer','hito','vaina','entelequia','lívido','sordidez','aviar','tarambana','huraño','egresar','meiga', 'perfección', 'sentido', 'travieso', 'gorrino', 'pantalla', 'refugio', 'cámara', 'innovación', 'cadena', 'dictar', 'sueldo', 'notoriedad', 'estrella', 'accidente', 'artículo', 'valía', 'ausencia', 'precio', 'hostil', 'conflicto', 'sencillez', 'inquina', 'soledad', 'hábito']
     const sinonimo = sinonimos[Math.floor(Math.random() * sinonimos.length)]
     console.log(sinonimos.length)
 
@@ -38,6 +38,46 @@ document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
           const soluciones = ['valer', 'valor', 'mérito', 'precio', 'estimabilidad', 'preciosidad']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'octavilla'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['cuartilla', 'impreso', 'pasquín', 'volante', 'panfleto', 'reoctava']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(sinonimo === 'gulusmear'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['golosinear', 'golosinar', 'golosear']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
           }
@@ -1581,7 +1621,7 @@ document.addEventListener("keydown", (event) => {
       return
     }
 
-    const antonimos = ['proclive','auge','banal','lacio','mórbido','halagüeño','fidedigno','boato','diligente','férreo','radical','condescendiente','umbral','comenzar','rollizo','bárbaro','perpetuo','hosco','díscolo','azar','sinónimo','complejo', 'mandar', 'silencio', 'universal', 'orden', 'aceleración', 'fortuna', 'actual', 'superficial', 'cuerdo', 'consuelo', 'intencionado', 'grosero', 'enardecidos', 'salubres']
+    const antonimos = ['apogeo','proclive','auge','banal','lacio','mórbido','halagüeño','fidedigno','boato','diligente','férreo','radical','condescendiente','umbral','comenzar','rollizo','bárbaro','perpetuo','hosco','díscolo','azar','sinónimo','complejo', 'mandar', 'silencio', 'universal', 'orden', 'aceleración', 'fortuna', 'actual', 'superficial', 'cuerdo', 'consuelo', 'intencionado', 'grosero', 'enardecidos', 'salubres']
     const antonimo = antonimos[Math.floor(Math.random() * antonimos.length)]
     console.log(antonimos.length)
     const title = 'ANTÓNIMOS'
@@ -1597,6 +1637,26 @@ document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
           const soluciones = ['profundo', 'hondo', 'interior', 'trascendental', 'fundamental']
+          if(soluciones.includes(solucion)){
+            cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
+          }
+          else {
+            cont1.innerHTML += `<p class="frase"><span class="fotoX"></span><span class="respuestaIncorrecta">${respuestaIncorrecta}</span></p>`
+          }
+         document.addEventListener("keydown", (event) => {
+            if(event.key === "1" || event.key === 'NumPad1'){
+              cont1.innerHTML += `<p class='frase'>Soluciones: <span class='soluciones'>${soluciones.join(", ")}</span></p>`
+            }
+          })
+        }
+      })
+    }
+
+    if(antonimo === 'apogeo'){
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const solucion = prompt ('Ingresa tu respuesta: ')
+          const soluciones = ['decadencia', 'ocaso', 'declive']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
           }
