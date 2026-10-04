@@ -1,10 +1,10 @@
 // The code is in spanish because I wanted the game to be one way to learn synonyms and antonyms in spanish to practice to PAU in Spain. The game is oriented to students that the next year are going to enter to the university there in Spain, so if they want to read the code I thought it would be easier if it is in spanish and also easier to me to program it.
 
 // En este programa voy a crear un juego para practicar sinonimia y antonimia para el examen de PAU
-const aclaración = '(SOLO FUNCIONA EN UN ORDENADOR. Hay que escribir la respuesta en minúsculas y con las tildes correspondientes)'
+const aclaración = '(Hay que escribir la respuesta en minúsculas y con las tildes correspondientes)'
 const teclaEnter = '"ENTER"'
-const respuestaCorrecta = 'Respuesta correcta, recargue la página para que genere otra palabra. Si sale la misma, recargue la página otra vez. Puede ver el resto de soluciones si le da a la tecla "1".'
-const respuestaIncorrecta = 'Respuesta incorrecta, dele al "enter" otra vez si quiere intentarlo de nuevo o recargue la página para que genere otra palabra. Si sale la misma, recargue la página otra vez. Si cree que la respuesta que ha escrito es válida puede que se deba a que he escrito solamente los sinonimos que salen en la RAE, puede ver las soluciones si le da a la tecla "1".'
+const respuestaCorrecta = 'Respuesta correcta, recargue la página o pulse el botón "Otra palabra" para que genere otra palabra. Si sale la misma, recargue la página otra vez. Puede ver el resto de soluciones si le da a la tecla "1".'
+const respuestaIncorrecta = 'Respuesta incorrecta, intentelo de nuevo, recargue la página o pulse el botón "Otra palabra" para que genere otra palabra. Si sale la misma, recargue la página otra vez. Si cree que la respuesta que ha escrito es válida puede que se deba a que he escrito solamente los sinonimos que salen en la RAE, puede ver las soluciones si le da a la tecla "1".'
 
 const cont1 = document.getElementById("contenedor")
 
@@ -29,7 +29,6 @@ document.addEventListener("keydown", (event) => {
 
     cont1.innerHTML += `<p class="frase"><span class="title">${title}</span></p>`
     cont1.innerHTML += `<p class="frase">Dime el sinónimo de <span class="sinonimo">${sinonimo}</span></p>`
-    cont1.innerHTML += `<p class="frase">Presiona la tecla <span class="teclaEnter">${teclaEnter}</span> para ingresar tu respuesta<span class="fotoEnter"></span></p>`
 
     // Cada condicional sirve para darle los valores de los sinonimos que sirven para cada palabra
     // La estructura de los condicionales es la misma, lo único que cambia son las palabras
@@ -1869,7 +1868,6 @@ document.addEventListener("keydown", (event) => {
     // Cada vez que he querido añadir un tecto y modificarlo me ha tocado hacerlo así porque no he encontrado otra forma
     cont1.innerHTML += `<p class="frase"><span class="title">${title}</span></p>`
     cont1.innerHTML += `<p class="frase">Dime el antónimo de <span class="sinonimo">${antonimo}</span></p>`
-    cont1.innerHTML += `<p class="frase">Presiona la tecla <span class="teclaEnter">${teclaEnter}</span> para ingresar tu respuesta<span class="fotoEnter"></span></p>`
 
     // Cada condicional sirve para darle los valores de los antónimos que sirven para cada palabra
     if(antonimo === 'superficial'){
@@ -2599,7 +2597,7 @@ document.addEventListener("keydown", (event) => {
       document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
-          const soluciones = ['cortés','educado', 'delicado', 'refinado', 'fino', 'culto']
+          const soluciones = ['cortés', 'amable','educado', 'delicado', 'refinado', 'fino', 'culto']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
           }
