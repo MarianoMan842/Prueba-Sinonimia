@@ -16,7 +16,7 @@ jobs:
     - name: Generar el archivo sitemap.xml
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://github.io # Cambia esto por la URL real de tu web
+        base-url-path: https://marianoman842.github.io/Prueba-Sinonimia/ # Cambia esto por la URL real de tu web
 
     - name: Hacer commit y push del sitemap generado
       run: |
