@@ -3,7 +3,11 @@ name: Generar Sitemap Automático
 on:
   push:
     branches:
-      - main # Cambia a 'master' o 'gh-pages' si tu rama por defecto es otra
+      - main 
+
+# ESTA SECCIÓN NUEVA LE DICE AL BOT QUE TIENE PERMISO DE ESCRIBIR
+permissions:
+  contents: write
 
 jobs:
   sitemap_job:
@@ -16,13 +20,12 @@ jobs:
     - name: Generar el archivo sitemap.xml
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://marianoman842.github.io/Prueba-Sinonimia/ # Cambia esto por la URL real de tu web
+        base-url-path: https://marianoman842.github.io/Prueba-Sinonimia/ # URL corregida para tu proyecto
 
     - name: Hacer commit y push del sitemap generado
       run: |
         git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@://github.com"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add sitemap.xml
-        # El condicional evita que falle la acción si el sitemap no ha cambiado
         git diff-index --quiet HEAD || git commit -m "Automated sitemap update"
         git push
