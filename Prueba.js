@@ -8,9 +8,8 @@ const respuestaIncorrecta = 'Respuesta incorrecta, intentelo de nuevo, recargue 
 
 const cont1 = document.getElementById("contenedor")
 
-const menu = 'Pulse "S" para practicar SINÓNIMOS o "A" para practicar ANTÓNIMOS'
 // Cada vez que he querido añadir un tecto y modificarlo me ha tocado hacerlo así porque no he encontrado otra forma
-cont1.innerHTML += `<p class="frase"><span class="menu">${menu}</span></p>`
+
 cont1.innerHTML += `<p class="frase"><span class="aclaración">${aclaración}</span></p>`
 
 let teclaUsada = false
@@ -2455,7 +2454,7 @@ document.addEventListener("keydown", (event) => {
       document.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const solucion = prompt ('Ingresa tu respuesta: ')
-          const soluciones = ['particular', 'parcial', 'local', 'limitado', 'nacional']
+          const soluciones = ['concreto', 'particular', 'parcial', 'local', 'limitado', 'nacional']
           if(soluciones.includes(solucion)){
             cont1.innerHTML += `<p class="frase"><span class="fotoTick"></span><span class="respuestaCorrecta">${respuestaCorrecta}</span></p>`
           }
