@@ -85,7 +85,7 @@ body {
   align-items: baseline;
   justify-content: center;
   gap: 14px;
-  font-size: clamp(40px, 9vw, 88px);
+  font-size: clamp(30px, 8vw, 78px);
   font-weight: 900;
   letter-spacing: 2px;
   line-height: 1.05;
